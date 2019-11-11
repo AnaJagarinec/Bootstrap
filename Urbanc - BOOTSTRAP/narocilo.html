@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        .jumbotron{
+            background-color: #a2e0a9;
+        }
+        body{
+            background-color: white;
+        }
+        .container{
+            background-color: white;
+        }
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Dostava na klik</h1>
+  <p>Povej nam kaj si zelis</p> 
+</div>
+
+<div>
+    <form>
+        <div class="form-group">
+            <label form="comment">Narocilnica</label>
+            <textarea class="form-control" rows="22" id="order"></textarea>
+            <br>
+            <label form="comment">Komentar</label>
+            <textarea class="form-control" rows="2" id="comment"></textarea>
+            <br>
+            <label form="comment">Naslov</label>
+            <textarea class="form-control" rows="1" id="address"></textarea>
+            <br>
+            <a href="#"><button type="button" onclick="preveri()" class="btn center-block">Oddaj narocilo!</button></a>
+        </div>
+    </form>   
+</div>
+    
+<script type='text/javascript'>
+    function preveri(){
+        if(confirm('Ali ste prepricani da je to vase narocilo?')){
+        }
+    }
+</script>
